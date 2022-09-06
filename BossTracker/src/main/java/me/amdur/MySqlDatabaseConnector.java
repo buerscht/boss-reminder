@@ -7,15 +7,11 @@ class MySqlDatabaseConnector{
     Connection conn = null;
     Statement  stmt = null;
     ResultSet  rs   = null;
-    String connectionUrl = "jdbc:mysql://142.132.233.69:3306/s70360_BossTracker";
-    String user          = "u70360_dpvl7qwZfD";
-    String password      = "+gKbGZwfXwE2PHUqsG@rvTqU";
+    String connectionUrl = "";
+    String user          = "";
+    String password      = "";
 
-    public Connection connect() { 
-
-        /*String connectionUrl = "jdbc:mysql://db5009576855.hosting-data.io:3306/dbs8119775";
-        String user          = "dbu852036";
-        String password      = "!sDBsYdWzR6fFpx";*/
+    public Connection connect() {
 
         try (Connection conn = DriverManager.getConnection(connectionUrl, user, password)) {            
             System.out.println("Successfully connected to database.");
