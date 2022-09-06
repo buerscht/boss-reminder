@@ -20,7 +20,7 @@ public class BossTracker {
     
     public static void main( String[] args ) throws LoginException, InterruptedException {
 
-        String token = "OTk4NTE2MjMwMzAwMzg1MzEw.GBSyIs.8LQOXWpsTE864ZzvyRa1_imGLNMewQtGnYG5P4";
+        String token = "";
 
         JDA api = JDABuilder.createDefault(token, GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_EMOJIS_AND_STICKERS)
                                 .setStatus(OnlineStatus.ONLINE)
